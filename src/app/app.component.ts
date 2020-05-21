@@ -5,15 +5,25 @@ import { POKEMONS } from './mock-pokemons'
   
 @Component({
   selector: 'pokemon-app',
-  template: `<h1>Pokémons</h1>`,
+  templateUrl: `./app/app.component.html`,
 })
 export class AppComponent implements OnInit { 
   
 
-  pokemons : Pokemon[] = null;
+  private pokemons : Pokemon[] = null;
+  private title : String = "Pokemons"
+  private value : String = '';
 
   ngOnInit(){
     this.pokemons = POKEMONS;
+  }
+
+  onClick(){
+    console.log("clic");
+  }
+
+  onKey(value : string){
+    this.value=  'Bonjour '+ value;
   }
 
   selectPokemon(pokemon : Pokemon){
