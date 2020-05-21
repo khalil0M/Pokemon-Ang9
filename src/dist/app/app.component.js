@@ -13,15 +13,10 @@ let AppComponent = class AppComponent {
         this.pokemons = null;
         this.title = "Pokemons";
         this.value = '';
+        this.values = '';
     }
     ngOnInit() {
         this.pokemons = mock_pokemons_1.POKEMONS;
-    }
-    onClick() {
-        console.log("clic");
-    }
-    onKey(value) {
-        this.value = 'Bonjour ' + value;
     }
     selectPokemon(pokemon) {
         alert("Vous avez clic sur : " + pokemon.name);
