@@ -12,7 +12,6 @@ let AppComponent = class AppComponent {
     constructor() {
         this.pokemons = null;
         this.title = "Pokemons";
-        this.age = 10;
     }
     ngOnInit() {
         this.pokemons = mock_pokemons_1.POKEMONS;

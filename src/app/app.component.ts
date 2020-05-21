@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   private pokemons : Pokemon[] = null;
   private title : String = "Pokemons"
-  age = 10;
+ 
   ngOnInit(){
     this.pokemons = POKEMONS;
   }
