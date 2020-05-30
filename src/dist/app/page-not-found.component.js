@@ -7,13 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
-let AppComponent = class AppComponent {
+let PageNotFoundComponent = class PageNotFoundComponent {
 };
-AppComponent = __decorate([
+PageNotFoundComponent = __decorate([
     core_1.Component({
-        selector: 'pokemon-app',
-        templateUrl: `./app/app.component.html`,
+        selector: 'page-404',
+        template: `
+    <div class='center'>
+      <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png"/>
+      <h1>Hey, cette page n'existe pas !</h1>
+      <a routerLink="/pokemons" class="waves-effect waves-teal btn-flat">
+        Retourner à l' accueil
+      </a>
+    </div>
+  `
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], PageNotFoundComponent);
+exports.PageNotFoundComponent = PageNotFoundComponent;
+//# sourceMappingURL=page-not-found.component.js.map
