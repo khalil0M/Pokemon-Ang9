@@ -22,6 +22,9 @@ let PokemonsService = class PokemonsService {
             }
         }
     }
+    getPokemontypes() {
+        return ['Plante', 'Feu', 'Eau', 'Insect', 'Normal', 'Elictrik', 'Poison', 'Fée', 'Vol'];
+    }
 };
 PokemonsService = __decorate([
     core_1.Injectable()
